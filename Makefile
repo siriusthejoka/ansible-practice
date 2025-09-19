@@ -4,13 +4,13 @@ CFLAGS = -Wall
 all: brazil usa pride
 
 brazil: brazil.c
-    $(CC) $(CFLAGS) brazil.c -o brazil -lm
+	$(CC) $(CFLAGS) -o brazil brazil.c -lm
 
 usa: usa.c
-    $(CC) $(CFLAGS) usa.c -o usa
+	$(CC) $(CFLAGS) -o usa usa.c
 
 pride: pride.c
-    $(CC) $(CFLAGS) pride.c -o pride
+	$(CC) $(CFLAGS) -o pride pride.c
 
 clean:
-    rm -f brazil usa pride
+	rm -f brazil usa pride
